@@ -3,13 +3,14 @@
 
 from base_caching import BaseCaching
 
+
 class BasicCache(BaseCaching):
     """Basic caching system with no limit on cache size"""
 
     def put(self, key, item):
         """Add an item in the cache with the specified key"""
         if key is not None and item is not None:
-            self.cache_data[key] = item  # Add or update the cache with the key-value pair
+            self.cache_data[key] = item
 
     def get(self, key):
         """Retrieve an item by key from the cache"""
