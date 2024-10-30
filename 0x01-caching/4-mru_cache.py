@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""MRUCache module"""
+"""
+MRUCache module that implements a caching system with
+the Most Recently Used (MRU) algorithm.
+"""
 
 from base_caching import BaseCaching
 from collections import OrderedDict
